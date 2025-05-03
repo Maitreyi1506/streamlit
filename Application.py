@@ -176,7 +176,7 @@ def set_background_image(image_path):
     )
     
 # set_background_image("https://www.google.com/search?q=birthday+themed+image&rlz=1C5GCEM_enIN1125IN1127&oq=birthday+themed+image&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIKCAYQABjJAxiABDIKCAcQABiSAxiABDIHCAgQABiABDIHCAkQABiABNIBCDQ3NzJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#vhid=xQxdzPxEfbYYMM&vssid=_-UkPaI6dOfeF4-EP3MiO8Ao_38:~:text=https%3A//images.app.goo.gl/AgqgpeVseJExVq1A9")
-set_background_image("/Users/maitreyi.m1/Downloads/bday_image.avif")
+set_background_image("bday_image.avif")
 
 # Main application logic
 if not st.session_state.guidelines_accepted:
