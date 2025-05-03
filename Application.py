@@ -4,11 +4,21 @@ import base64
 # Store passwords and their corresponding messages
 PASSWORDS_before = {
     "teal12345": "These kinds of messages should be viewed before opening said gift.",
-    "password3": "This is the message for password3.",
+    "teal56789": "Oookay, the games begin now.\nThey were supposed to begin earlier with the other gift but I was sick (oops).\nThe date of our first date is the next password in DDMYY format. Use it after you open the gift.",
+    "teal23043": "It's a gift for US. Not you. To be used when we are having sex.\nI'll know if you use it with other girls. It better be brand new when we meet.\nIt's has a camera in it so I can keep an eye on you al the time, so place it somewhere it can view you all the time. <3.\nUse my certificate bday for the next gift [DDMYY format].",
+    "teal99999": "I KNOW you have more expensive standards and you would've bought a much more fancy version of this for yourself but open it wiht a mind inside MY tax bracket okay?",
+    "teal23456": "I'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nUse this password+11111 after opening the gift.",
+    "teal22222": "I looked for it in red but it wasn't available :(",
+    "teal11111": "DO NOT OPEN THIS AROUND ANYBODY THIS CANNOT BE SEEN BY ANYONE ANYONE FIND A GOOD HIDING PLACE.",
 }
 
 PASSWORDS_after = {
     "teal23456": "These kinds of messages should be viewed after opening said gift.",
+    "teal03823": "It's a wallpaper!\nIt's so that when a certain rich boy renovates his room there is a reminder of me and thus I can never be dumped hahahahahahahaahahhaa (Honey trapped).\nNext password for the gift arriving on 6th is my birthday but in DDMMY formnat.",
+    "teal15602": "Because when my man goes on dates with other bitches he must look absolitely fucking cool.\nOtherwise it's just plain embarrassing.\nIf you wear them and immediately like feel drowsy or sleepy it is a pure coincidence I promise. If you feel your face getting kissed too, pure coincidence. Do not investigate. (Good boy).\nNext password is the hotness level of Om Kamal Morendha on a scale of 10000 to 99999.",
+    "teal34567": "These are handcuffs for your keys. No, for muy keys.\nThe ones I'd use to lock you in my basement [where there will be real handcuffs]",
+    "teal33333": "Thong for my hottie<3",
+    "teal44444": "Because you once said \"Even if you bought me a sock I'd be so happy.\" [pls laugh pls laugh].\nFuzzy socks for my babygal.",
 }
 
 # Session state to track if guidelines are accepted
@@ -24,9 +34,9 @@ if "selected_text" not in st.session_state:
 # Function to display guidelines
 def show_guidelines():
     st.title("Welcome to your Gifts Galore Bonanza Shaboinboing")
-    st.write("""This website exists to soft launch Birthday week. \n
-             Kindly do not fall in nsfec over this website (no matter how difficult it may be). \n
-             Go through the following guidelines for your own safety""")
+    st.markdown("""This website exists to soft launch Birthday week.  
+    Kindly do not fall in nsfec over this website (no matter how difficult it may be).  
+    Go through the following guidelines for your own safety""")
     st.title("Guidelines")
     st.write("""
     Please read and agree to the following guidelines before proceeding:
@@ -64,6 +74,19 @@ def authenticate():
             st.session_state.selected_text = "After Opening"
         else:
             st.error("Invalid password. Please try again.")
+            
+# Function to display the message with proper formatting
+def display_message():
+    if st.session_state.message:
+        # Split the message into paragraphs based on newlines
+        paragraphs = st.session_state.message.split("\n")
+        # Render each paragraph with proper spacing
+        for paragraph in paragraphs:
+            st.markdown(
+                f"<div style='text-align: justify; font-size: 18px; line-height: 1.6;'>{paragraph}</div>",
+                unsafe_allow_html=True
+            )
+            st.markdown("<br>", unsafe_allow_html=True)  # Add spacing between paragraphs
 
 # Function to display the main page
 def main_page():
@@ -126,10 +149,10 @@ def main_page():
     button_text = st.session_state.selected_text
     if button_text == "Before Opening":
         if st.button("Before Opening", key="before_button"):
-            st.write(st.session_state.message)
+            display_message()
     elif button_text == "After Opening":
         if st.button("After Opening", key="after_button"):
-            st.write(st.session_state.message)
+            display_message()
     else:
         st.error("Invalid state. Please restart the application.")
 
@@ -153,7 +176,7 @@ def set_background_image(image_path):
     )
     
 # set_background_image("https://www.google.com/search?q=birthday+themed+image&rlz=1C5GCEM_enIN1125IN1127&oq=birthday+themed+image&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIKCAYQABjJAxiABDIKCAcQABiSAxiABDIHCAgQABiABDIHCAkQABiABNIBCDQ3NzJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#vhid=xQxdzPxEfbYYMM&vssid=_-UkPaI6dOfeF4-EP3MiO8Ao_38:~:text=https%3A//images.app.goo.gl/AgqgpeVseJExVq1A9")
-set_background_image("bday_image.avif")
+set_background_image("/Users/maitreyi.m1/Downloads/bday_image.avif")
 
 # Main application logic
 if not st.session_state.guidelines_accepted:
