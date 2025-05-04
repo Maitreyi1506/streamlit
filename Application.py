@@ -10,6 +10,8 @@ PASSWORDS_before = {
     "teal23456": "I'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nUse this password+11111 after opening the gift.",
     "teal22222": "I looked for it in red but it wasn't available :(",
     "teal11111": "DO NOT OPEN THIS AROUND ANYBODY THIS CANNOT BE SEEN BY ANYONE ANYONE FIND A GOOD HIDING PLACE.",
+    "teal12724": "For smokey smokerson (you).",
+
 }
 
 PASSWORDS_after = {
