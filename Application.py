@@ -9,7 +9,7 @@ PASSWORDS_before = {
     "teal99999": "I KNOW you have more expensive standards and you would've bought a much more fancy version of this for yourself but open it wiht a mind inside MY tax bracket okay?",
     "teal23456": "I'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nUse this password+11111 after opening the gift.",
     "teal22222": "I looked for it in red but it wasn't available :(",
-    "teal11111": "DO NOT OPEN THIS AROUND ANYBODY THIS CANNOT BE SEEN BY ANYONE ANYONE FIND A GOOD HIDING PLACE.",
+    "teal11111": "DO NOT OPEN THIS AROUND ANYBODY THIS CANNOT BE SEEN BY ANYONE ANYONE FIND A GOOD HIDING PLACE.\nUse 33333 after opening ahahah.",
     "teal12724": "For smokey smokerson (you).",
 
 }
