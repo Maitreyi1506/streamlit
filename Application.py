@@ -5,7 +5,7 @@ import base64
 PASSWORDS_before = {
     "teal12345": "These kinds of messages should be viewed before opening said gift.",
     "teal56789": "Oookay, the games begin now.\nThey were supposed to begin earlier with the other gift but I was sick (oops).\nThe date of our first date is the next password in DDMYY format. Use it after you open the gift.",
-    "teal23043": "It's a gift for US. Not you. To be used when we are having sex.\nI'll know if you use it with other girls. It better be brand new when we meet.\nIt's has a camera in it so I can keep an eye on you al the time, so place it somewhere it can view you all the time. <3.\nUse my certificate bday for the next gift [DDMYY format].",
+    "teal23042": "It's a gift for US. Not you. To be used when we are having sex.\nI'll know if you use it with other girls. It better be brand new when we meet.\nIt's has a camera in it so I can keep an eye on you al the time, so place it somewhere it can view you all the time. <3.\nUse my certificate bday for the next gift [DDMYY format].",
     "teal99999": "I KNOW you have more expensive standards and you would've bought a much more fancy version of this for yourself but open it wiht a mind inside MY tax bracket okay?",
     "teal23456": "I'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nI'm not a stalker.\nUse this password+11111 after opening the gift.",
     "teal22222": "I looked for it in red but it wasn't available :(",
