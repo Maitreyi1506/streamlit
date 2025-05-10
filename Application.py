@@ -21,6 +21,7 @@ PASSWORDS_after = {
     "teal34567": "These are handcuffs for your keys. No, for muy keys.\nThe ones I'd use to lock you in my basement [where there will be real handcuffs]",
     "teal33333": "Thong for my hottie<3",
     "teal44444": "Because you once said \"Even if you bought me a sock I'd be so happy.\" [pls laugh pls laugh].\nFuzzy socks for my babygal.",
+    "teal88888": "huhhhh",
 }
 
 PASSWORD_final = {
