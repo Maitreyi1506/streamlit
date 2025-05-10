@@ -25,7 +25,7 @@ PASSWORDS_after = {
 }
 
 PASSWORD_final = {
-    "teal11525": "Sample sample sample message.",
+    "teal11525": "Hiiii, Happy Birthday!!!!!!!\nHope you have a great day!\nXXXXXXX <END OF MESSAGE> XXXXXXX\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJust kidding haha I'm so funny no? If only I was tall and a billionaire too. Don't worry, I'm working on it.\nHi, Om. You sexy bum being. You're such a great person. A great, great person. I love how much you take care of yourself, and me. I love how much you think about your friends. Everybody needs a friend like you. You're so funny and kind and sweet and real. You've seen me at my absolute lowest and you're still here. That means the absolute world to me. The WHOLE WORLD.\n Honestly though, being a litle real, I just want you to knowm, that no matter what happend with us, no matter how well or how long we work together, you will always be the guy that saved me. You will always be the reason I want to heal, I want to grow. You will always be the reason I remind myself I can laugh even on the absolute worst day. I nsfec you for not growing tired of me crying. I hate everything you've had to go through as a result of my being. I hate it. You deserve SO much happiness, and I would spend every day of my life trying to make you half as happy as you've made me at my lowest times ever. Oho, bollywood movie ho gaya. I have so much love to give, and there's nobody I'd rather give it to than you, you are my world. I'd accept you, even if you continue smoking. That's how much you mean to me <3",
 }
 
 # Session state to track if guidelines are accepted
