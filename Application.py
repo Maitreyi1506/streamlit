@@ -23,6 +23,10 @@ PASSWORDS_after = {
     "teal44444": "Because you once said \"Even if you bought me a sock I'd be so happy.\" [pls laugh pls laugh].\nFuzzy socks for my babygal.",
 }
 
+PASSWORD_final = {
+    "teal11525": "Sample sample sample message.",
+}
+
 # Session state to track if guidelines are accepted
 if "guidelines_accepted" not in st.session_state:
     st.session_state.guidelines_accepted = False
@@ -74,6 +78,10 @@ def authenticate():
             st.session_state.authenticated = True
             st.session_state.message = PASSWORDS_after[password]
             st.session_state.selected_text = "After Opening"
+        elif password in PASSWORD_final:
+            st.session_state.authenticated = True
+            st.session_state.message = PASSWORD_final[password]
+            st.session_state.selected_text = "Read Message"
         else:
             st.error("Invalid password. Please try again.")
             
@@ -154,6 +162,9 @@ def main_page():
             display_message()
     elif button_text == "After Opening":
         if st.button("After Opening", key="after_button"):
+            display_message()
+    elif button_text == "Read Message":
+        if st.button("Read Message", key="final_button"):
             display_message()
     else:
         st.error("Invalid state. Please restart the application.")
